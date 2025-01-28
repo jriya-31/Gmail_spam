@@ -20,7 +20,7 @@
     "default_icon": "icon.png"
   },
   "oauth2": {
-    "client_id": "912411418407-g2rdm6utbfqknq6qca2u6jj89pidu1tq.apps.googleusercontent.com",
+    "client_id": "//Enter your Client_ID",
     "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
   }
 }
