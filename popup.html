@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gmail Spam Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+    }
+    .container {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      padding: 20px;
+      background: white;
+      color: black;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .columns {
+      display: flex;
+      justify-content: space-around;
+    }
+    .column {
+      width: 45%;
+    }
+    
+    .high-spam { color: red; }
+    .moderate-spam { color: orange; }
+    .low-spam { color: yellow; }
+    .safe { color: green; }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Email Classification</h1>
+    <div class="columns">
+      <div class="column">
+        <h2>Spam Emails</h2>
+        <ul id="spamEmails"></ul>
+      </div>
+      <div class="column">
+        <h2>Safe Emails</h2>
+        <ul id="safeEmails"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

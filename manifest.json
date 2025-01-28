@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail-spam",
+  "version": "1.0",
+  "description": "Detect spam emails in Gmail",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "identity",
+    "identity.email",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "oauth2": {
+    "client_id": "912411418407-g2rdm6utbfqknq6qca2u6jj89pidu1tq.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
+  }
+}
